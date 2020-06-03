@@ -1,0 +1,12 @@
+@model HomeViewModel
+
+<h2>Popular books offers</h2>
+
+<div class="row">
+
+    @foreach (var candy in Model.BooksOnSale)
+    {
+        <partial name="_booksCard" model="books" />
+    }
+
+</div>
